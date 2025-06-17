@@ -58,7 +58,7 @@
       .main-content {
         flex: 1;
         display: grid;
-        grid-template-columns: 1.2fr 1fr 1.2fr;
+        grid-template-columns: 1fr 0.8fr 1fr;
         gap: 15px;
         height: calc(100% - 80px);
       }
@@ -272,7 +272,9 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>OUTPUT QUEST <span class="version">開発構成図</span></h1>
+        <h1>
+          Output Quest <span class="version">Development Architecture</span>
+        </h1>
         <p>RPG風ゲーミフィケーション学習支援アプリケーション</p>
       </div>
 
@@ -294,7 +296,9 @@
                 <div class="tech-desc">UI Library</div>
               </div>
               <div class="tech-item">
-                <div class="tech-name">Tailwind CSS</div>
+                <div class="tech-name">
+                  Tailwind CSS <span class="version">4.1</span>
+                </div>
                 <div class="tech-desc">Utility-first CSS</div>
               </div>
               <div class="tech-item">
@@ -305,19 +309,23 @@
           </div>
 
           <div class="card">
-            <h3 class="card-title">Authentication & UI</h3>
-            <div class="tech-grid" style="grid-template-columns: 1fr">
-              <div class="tech-item">
-                <div class="tech-name">Clerk</div>
-                <div class="tech-desc">Auth Service</div>
-              </div>
+            <h3 class="card-title">UI & Experience</h3>
+            <div class="tech-grid" style="grid-template-columns: 1fr 1fr">
               <div class="tech-item">
                 <div class="tech-name">Radix UI</div>
-                <div class="tech-desc">Accessible Components</div>
+                <div class="tech-desc">Components</div>
               </div>
               <div class="tech-item">
                 <div class="tech-name">Howler.js</div>
                 <div class="tech-desc">Audio Library</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">Swiper</div>
+                <div class="tech-desc">Touch Slider</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">Icons</div>
+                <div class="tech-desc">Lucide/Phosphor</div>
               </div>
             </div>
           </div>
@@ -380,55 +388,61 @@
 
         <div class="column-right">
           <div class="card">
-            <h3 class="card-title">Backend & API</h3>
-            <div class="tech-grid" style="grid-template-columns: 1fr">
+            <h3 class="card-title">Backend & Services</h3>
+            <div class="tech-grid" style="grid-template-columns: 1fr 1fr">
               <div class="tech-item">
                 <div class="tech-name">Prisma ORM</div>
-                <div class="tech-desc">Type-safe Database</div>
+                <div class="tech-desc">Type-safe DB</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">Clerk</div>
+                <div class="tech-desc">Authentication</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">AI SDK</div>
+                <div class="tech-desc">Google AI</div>
               </div>
               <div class="tech-item">
                 <div class="tech-name">Svix</div>
-                <div class="tech-desc">Webhook Service</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card deployment-card">
-            <h3 class="card-title">Deployment</h3>
-            <div class="deployment-items">
-              <div class="tech-item">
-                <div class="tech-name">Vercel</div>
-                <div class="tech-desc">Hosting Platform</div>
-              </div>
-              <div class="tech-item">
-                <div class="tech-name">GitHub</div>
-                <div class="tech-desc">Version Control</div>
+                <div class="tech-desc">Webhooks</div>
               </div>
             </div>
           </div>
 
           <div class="card">
-            <h3 class="card-title">Key Features</h3>
-            <div class="features-grid">
-              <div class="feature-item">
-                <span class="feature-icon">•</span>
-                <span>RPG Gamification System</span>
+            <h3 class="card-title">Data & Validation</h3>
+            <div class="tech-grid" style="grid-template-columns: 1fr 1fr">
+              <div class="tech-item">
+                <div class="tech-name">Zod</div>
+                <div class="tech-desc">Schema Validation</div>
               </div>
-              <div class="feature-item">
-                <span class="feature-icon">•</span>
-                <span>Turbopack Development</span>
+              <div class="tech-item">
+                <div class="tech-name">React Markdown</div>
+                <div class="tech-desc">Content Parser</div>
               </div>
-              <div class="feature-item">
-                <span class="feature-icon">•</span>
-                <span>Type-safe Database Operations</span>
+            </div>
+          </div>
+
+          <div class="card deployment-card">
+            <h3 class="card-title">Deployment & Tools</h3>
+            <div class="deployment-items">
+              <div class="tech-item">
+                <div class="tech-name">Vercel</div>
+                <div class="tech-desc">Hosting</div>
               </div>
-              <div class="feature-item">
-                <span class="feature-icon">•</span>
-                <span>Real-time Sound Effects</span>
+              <div class="tech-item">
+                <div class="tech-name">GitHub</div>
+                <div class="tech-desc">Version Control</div>
               </div>
-              <div class="feature-item">
-                <span class="feature-icon">•</span>
-                <span>External Content Integration</span>
+              <div class="tech-item">
+                <div class="tech-name">
+                  pnpm <span class="version">10.11</span>
+                </div>
+                <div class="tech-desc">Package Manager</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-name">Prettier/ESLint</div>
+                <div class="tech-desc">Code Quality</div>
               </div>
             </div>
           </div>
