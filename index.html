@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>OUTPUT QUEST 開発構成図</title>
+		<title>OUTPUT QUEST　開発構成図</title>
 		<style>
 			* {
 				margin: 0;
@@ -386,7 +386,7 @@
 				</div>
 
 				<div class="card architecture-flow">
-					<h3 class="card-title">Architecture Flow</h3>
+					<h3 class="card-title">Architecture Overview</h3>
 					<div class="flow-container">
 						<div class="flow-line"></div>
 
@@ -401,10 +401,20 @@
 						<div class="flow-arrow">↓</div>
 
 						<div class="flow-node">
+							<div class="flow-node-icon">🔑</div>
+							<div class="flow-node-content">
+								<div class="flow-node-title">Clerk Auth</div>
+								<div class="flow-node-desc">Authentication</div>
+							</div>
+						</div>
+
+						<div class="flow-arrow">↓</div>
+
+						<div class="flow-node">
 							<div class="flow-node-icon">⚡</div>
 							<div class="flow-node-content">
-								<div class="flow-node-title">Next.js</div>
-								<div class="flow-node-desc">SSR/SSG</div>
+								<div class="flow-node-title">Next.js (App Router)</div>
+								<div class="flow-node-desc">SSR / CSR</div>
 							</div>
 						</div>
 
@@ -413,8 +423,8 @@
 						<div class="flow-node">
 							<div class="flow-node-icon">🔧</div>
 							<div class="flow-node-content">
-								<div class="flow-node-title">API Routes</div>
-								<div class="flow-node-desc">Serverless</div>
+								<div class="flow-node-title">Server Functions</div>
+								<div class="flow-node-desc">API Routes / Actions</div>
 							</div>
 						</div>
 
@@ -423,8 +433,8 @@
 						<div class="flow-node">
 							<div class="flow-node-icon">🔄</div>
 							<div class="flow-node-content">
-								<div class="flow-node-title">Prisma</div>
-								<div class="flow-node-desc">ORM</div>
+								<div class="flow-node-title">Prisma ORM</div>
+								<div class="flow-node-desc">Data Access</div>
 							</div>
 						</div>
 
@@ -433,7 +443,7 @@
 						<div class="flow-node">
 							<div class="flow-node-icon">💾</div>
 							<div class="flow-node-content">
-								<div class="flow-node-title">Database</div>
+								<div class="flow-node-title">Supabase DB</div>
 								<div class="flow-node-desc">PostgreSQL</div>
 							</div>
 						</div>
@@ -478,11 +488,11 @@
 					</div>
 
 					<div class="card">
-						<h3 class="card-title">Deployment・Hosting</h3>
+						<h3 class="card-title">Hosting</h3>
 						<div class="tech-grid" style="grid-template-columns: 1fr">
 							<div class="tech-item">
 								<div class="tech-name">Vercel</div>
-								<div class="tech-desc">Deployment・Hosting</div>
+								<div class="tech-desc">Hosting</div>
 							</div>
 						</div>
 					</div>
@@ -498,7 +508,7 @@
 					</div>
 
 					<div class="card">
-						<h3 class="card-title">Package Management</h3>
+						<h3 class="card-title">Package Manager</h3>
 						<div class="tech-grid" style="grid-template-columns: 1fr">
 							<div class="tech-item">
 								<div class="tech-name">
